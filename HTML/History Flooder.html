@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History Flooder</title>
+</head>
+<body>
+  <h1>History Flood Tool</h1>
+  <button onclick="historyFlood()">Flood History?</button>
+  
+  <script>
+    function historyFlood() {
+      var num = prompt("History flood amount: ");
+      var done = false;
+      var x = window.location.href;
+      for (var i = 1; i <= num; i++) {
+        history.pushState(0, 0, i == num ? x : i.toString());
+        if (i == num) {
+          done = true;
+        }
+      }
+      if (done === true) {
+        alert("History flood successful! " + window.location.href + " now appears in your history " + num + (num == 1 ? " time." : " times. (Made by JonasFlynn)"));
+      }
+    }
+  </script>
+</body>
+</html>
