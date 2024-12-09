@@ -9,4 +9,4 @@ If you wanna make a HTML bookmarklet to work go to: (https://ashtondavies.github
 Also I am gonna find a website to convert HTML code to Javascript.
 
 
-Or this: (https://caiorss.github.io/bookmarklet-maker/)
+Or this: (https://caiorss.github.io/bookmarklet-maker/).
