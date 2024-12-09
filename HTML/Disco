@@ -1,0 +1,49 @@
+(function() {
+  var discoInterval = null;
+  var colors = ["red", "orange", "yellow", "green", "blue", "purple", "pink"];
+
+  function startDisco() {
+    if (!discoInterval) {
+      discoInterval = setInterval(function() {
+        var color = colors[Math.floor(Math.random() * colors.length)];
+        var elements = document.querySelectorAll("*");
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].style.backgroundColor = color;
+        }
+      }, 0.1);  // Change every 0.1 milliseconds
+    }
+  }
+
+  function stopDisco() {
+    clearInterval(discoInterval);
+    discoInterval = null;
+    var elements = document.querySelectorAll("*");
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.backgroundColor = "";
+    }
+  }
+
+  // Create and add Start Disco button
+  var startButton = document.createElement('button');
+  startButton.textContent = 'Start Disco';
+  startButton.style.position = 'fixed';
+  startButton.style.bottom = '10px';
+  startButton.style.right = '90px';
+  startButton.onclick = startDisco;
+  document.body.appendChild(startButton);
+
+  // Create and add Stop Disco button
+  var stopButton = document.createElement('button');
+  stopButton.textContent = 'Stop Disco';
+  stopButton.style.position = 'fixed';
+  stopButton.style.bottom = '10px';
+  stopButton.style.right = '10px';
+  stopButton.onclick = stopDisco;
+  document.body.appendChild(stopButton);
+
+  // Start disco effect immediately
+  startDisco();
+})();
+
+
+
