@@ -1,0 +1,14 @@
+javascript:(function () { 
+  var script = document.createElement('script'); 
+  script.src = "https://cdn.jsdelivr.net/npm/eruda"; 
+  document.body.appendChild(script); 
+  script.onload = function () { 
+    eruda.init(); 
+  }; 
+})();
+
+
+If you see a gear on the right bottem of your screen that means that means It works! 
+
+To run this go to: https://caiorss.github.io/bookmarklet-maker/#
+And: ashtondavies.github.io
