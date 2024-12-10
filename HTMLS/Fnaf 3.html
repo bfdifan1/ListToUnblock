@@ -1,14 +1,34 @@
-
 <!doctype html>
 
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>About:Blank</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    #game-box-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
 </head>
 
 <body>
-  <iframe src="https://scratch.mit.edu/projects/520963732/embed" border="0" scrolling="no" style="border:0;" id="game-box-iframe" allowfullscreen="allowfullscreen" allow="autoplay; fullscreen; microphone; gamepad; accelerometer; encrypted-media; gyroscope;" width="724" height="542" frameborder="0"></iframe>
+  <iframe 
+    src="https://scratch.mit.edu/projects/520963732/embed" 
+    id="game-box-iframe" 
+    allowfullscreen="allowfullscreen" 
+    allow="autoplay; fullscreen; microphone; gamepad; accelerometer; encrypted-media; gyroscope;"
+    frameborder="0">
+  </iframe>
 </body>
 </html>
