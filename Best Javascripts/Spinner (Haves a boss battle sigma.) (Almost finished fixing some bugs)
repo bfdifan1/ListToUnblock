@@ -1,0 +1,132 @@
+javascript:(function() {
+  var css = "\
+    @keyframes roll {\
+      0% {\
+        transform: rotate(0deg);\
+      }\
+      100% {\
+        transform: rotate(360deg);\
+      }\
+    }\
+    @keyframes bossBattleColorChange {\
+      0% {\
+        background-color: red;\
+      }\
+      50% {\
+        background-color: blue;\
+      }\
+      100% {\
+        background-color: red;\
+      }\
+    }\
+    body {\
+      animation-name: roll;\
+      animation-duration: 4s;\
+      animation-iteration-count: infinite;\
+      animation-timing-function: linear;\
+      height: 2000px; /* Initial page height */ \
+      overflow-x: hidden;\
+      background-color: black; /* Default background color */ \
+      color: white; /* Default text color */ \
+    }\
+    .super-fast {\
+      animation-name: roll, bossBattleColorChange;\
+      animation-duration: 0.01s, 0.01s;\
+      animation-iteration-count: infinite;\
+      animation-timing-function: linear, linear;\
+    }\
+    .glow-text {\
+      color: white;\
+      text-align: center;\
+      font-size: 3em;\
+      margin-top: 200px;\
+      animation: fadeInOut 10s infinite; /* Fade in and out slowly and smoothly */ \
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);\
+    }\
+    .boss-button {\
+      position: fixed;\
+      bottom: 20px;\
+      left: 50%;\
+      transform: translateX(-50%);\
+      padding: 10px 20px;\
+      background-color: red;\
+      color: white;\
+      border: none;\
+      border-radius: 5px;\
+      cursor: pointer;\
+      font-size: 1.5em;\
+      visibility: hidden; /* Initially hidden */ \
+    }";
+
+  var style = document.createElement("style");
+  style.innerHTML = css;
+  document.head.appendChild(style);
+
+  var originalContent = document.body.cloneNode(true); // Save original content as a clone
+  var currentDuration = 4; // Initial duration of the spin
+  var intervalId; // Variable to store the interval ID
+
+  function adjustSpeed() {
+    currentDuration = Math.max(0.01, currentDuration - 0.5); // Decrease the duration by 0.5s every second, min 0.01s
+    document.body.style.animationDuration = currentDuration + "s";
+    if (currentDuration <= 0.1) {
+      document.body.classList.add('super-fast'); // Add super-fast class to change background color very quickly
+    }
+    if (currentDuration <= 0.01) {
+      revealGlowText(); // Reveal the glowing text when it's super fast
+    }
+  }
+
+  function revealGlowText() {
+    document.body.innerHTML = ""; // Clear the page content
+    setTimeout(() => {
+      document.body.style.animation = 'none'; // Stop spinning
+      document.body.style.backgroundColor = 'black'; // Turn background black
+
+      // Add glowing, fading text
+      var glowText = document.createElement("div");
+      glowText.className = 'glow-text';
+      glowText.innerHTML = "You broke the page. Scroll down";
+      document.body.appendChild(glowText);
+
+      // Add the Boss Battle button
+      var bossButton = document.createElement("button");
+      bossButton.className = 'boss-button';
+      bossButton.innerHTML = "Fight Boss";
+      bossButton.style.visibility = 'visible'; // Make it visible
+      bossButton.onclick = function() {
+        startBossBattle(); // Start the boss battle on button click
+      };
+      document.body.appendChild(bossButton);
+    }, 1000); // Delay to ensure smooth transition
+  }
+
+  function startBossBattle() {
+    clearInterval(intervalId); // Stop all intervals
+
+    // Restore the original content clone
+    document.body.replaceWith(originalContent.cloneNode(true));
+    
+    // Check if the page is already spinning and changing colors, if not force it
+    if (document.body.style.animationName.indexOf('bossBattleColorChange') === -1) {
+      document.body.style.animationName = 'bossBattleColorChange';
+    }
+    if (document.body.style.animationName.indexOf('roll') === -1) {
+      document.body.style.animationName += ', roll';
+    }
+    document.body.style.animationDuration = '0.8s, 4s';
+    document.body.style.animationIterationCount = 'infinite, infinite';
+    document.body.style.animationTimingFunction = 'linear, linear';
+
+    function increaseSpinSpeed() {
+      var spinDuration = parseFloat(getComputedStyle(document.body).animationDuration.split(',')[1]);
+      document.body.style.animationDuration = '0.8s, ' + Math.max(0.01, spinDuration - 0.5) + 's';
+    }
+    setInterval(increaseSpinSpeed, 1000);
+
+    // Remove the applied styles
+    document.head.removeChild(style);
+  }
+
+  intervalId = setInterval(adjustSpeed, 1000); // Adjust speed every second
+})();
