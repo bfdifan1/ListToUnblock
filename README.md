@@ -13,23 +13,19 @@ Javascript and HTML file converter link: (.https://caiorss.github.io/bookmarklet
 ### Useful Websites: 1. (https://grapesjs.com/demo). Reason: Can help you make your own website In HTML and etc etc.
 
 ### Useful Websites  2.
- |  
- |
- v
-
 Step One:
- |  
- |
- v
- 
-Open this link and just leave it alone. (Note: This will not run code it's just there to fix the second page.)
-
-             |
-             |  
-             |
-             v                        
+Open this link on the bottom of the text and just leave it alone. (Note: This will not run code it's just there to fix the second page.)                      
   
-  devtools://devtools/bundled/devtools_app.html
+### Copy me and go to a new tab and paste It and press enter!                                                                                  
+                                    
+                devtools://devtools/bundled/devtools_app.html
+
+
+### Now do the same thing! 
+
+###   
+
+    devtools://devtools/bundled/devtools_app.html?experiments=true&ws=rig.kxtz.dev/             
   
 
 ### Update Logs:
