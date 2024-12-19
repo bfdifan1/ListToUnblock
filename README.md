@@ -1,6 +1,6 @@
 ### Adding useful HTMLS Useful unblocked websites and etc etc.
 
-### Version: 1.7.2 (Added 3 folders that are called: Best Javascripts, And Javascript's. And I added 5 HTML'S bookmarklets.) 
+### Version: 1.3.4 (Added 3 folders that are called: Best Javascripts, And Javascript's. And I added 5 HTML'S bookmarklets.) 
 
 Make a Issue If you have any Website/Htmls. etc etc so I can add them.
 
@@ -17,13 +17,10 @@ If you wanna make a HTML bookmarklet to work go to: (https://ashtondavies.github
 ### Update Logs:
 
 #### (Update Logs: V.1.0: (How It begin...)
-
 ###### V.1.0 Adding useful HTMLS And Useful unblocked websites. 
 
 ###### (Update Log: V.1.1: We added # to make the text a little smaller.)
-
 ##### V.1.1 # Adding useful HTMLS Useful unblocked websites and etc etc.
 
 ###### (Update Logs: V.1.2: (I'm too lazy)
-
 ##### V.1.2 Make a Issue If you have any Website/Htmls. etc etc so I can add them. 
