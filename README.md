@@ -6,7 +6,7 @@
 
 If you wanna make a HTML bookmarklet to work go to: (https://ashtondavies.github.io/LoMoH/?unlock). Make sure you have the HTML code/JavaScript code so It can work.
 
-Javascript and HTMl file converter link: (.https://caiorss.github.io/bookmarklet-maker/). 
+Javascript and HTML file converter link: (.https://caiorss.github.io/bookmarklet-maker/). 
 
 
 Or this: (https://caiorss.github.io/bookmarklet-maker/).
