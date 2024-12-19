@@ -14,8 +14,16 @@ If you wanna make a HTML bookmarklet to work go to: (https://ashtondavies.github
 
 
 
-### Update Logs: 1. V.1.0.0 Adding useful HTMLS And Useful unblocked websites. 
-   ####              Make a Issue If you have any website/htmls. etc etc.
+### Update Logs:
 
+#### (Update Logs: V.1.0: (How It begin...)
 
-   #### 
+###### V.1.0 Adding useful HTMLS And Useful unblocked websites. 
+
+###### (Update Log: V.1.1: We added # to make the text a little smaller.)
+
+##### V.1.1 # Adding useful HTMLS Useful unblocked websites and etc etc.
+
+###### (Update Logs: V.1.2: (I'm too lazy)
+
+##### V.1.2 Make a Issue If you have any Website/Htmls. etc etc so I can add them. 
