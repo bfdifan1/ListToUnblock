@@ -1,58 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autoplay YouTube Video</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+    #iza4 {
+      background-repeat: repeat;
+      background-position: left top;
+      background-attachment: scroll;
+      background-size: auto;
+      background-image: linear-gradient(#fff400 0%, #fff400 100%);
+    }
+    #iwv5, #ii0y, #i4673 {
+      padding: 10px 10px 10px 10px;
+      box-shadow: unset;
+      border-radius: 0 0px 0 0;
+      border: 0px solid black;
+      height: 29px;
+      font-family: Helvetica, sans-serif;
+      text-shadow: 0px 0px 17px black;
+      margin: 0px 0px 0px -9px;
+    }
+    #i4673 {
+      float: none;
+      position: relative;
+      text-align: center;
+    }
+    .hidden-video {
+      display: none; /* Hide the video */
+    }
+  </style>
+</head>
 <body id="iza4">
-  <div id="iwv5">List To Unblock
-  </div>
-  <div id="ii0y">V.1.3.8. 
+  <div id="iwv5">List To Unblock</div>
+  <div id="ii0y">V.1.3.8.
     <br/>
     <br/>
     <br/>
   </div>
   <div id="i4673">Today's Update Log: 1 day ago: (Added 3 folders that are called: Best Javascripts. And Javascript's. And I added 5 HTML'S bookmarklets. And I also added 2 websites to help you probably do smth or idk.)
   </div>
+
+  <div class="hidden-video">
+    <iframe id="youtube-video" width="560" height="315"
+      src="https://www.youtube.com/embed/wOcjAG26KkU?autoplay=1&loop=1&playlist=wOcjAG26KkU&muted=1"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <script>
+    // Function to play the video when the page loads
+    window.onload = function() {
+      const iframe = document.getElementById('youtube-video');
+      iframe.src += "&autoplay=1";
+    };
+  </script>
 </body>
-<style>* {
-  box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-  }
-  #iza4{
-    background-repeat:repeat;
-    background-position:left top;
-    background-attachment:scroll;
-    background-size:auto;
-    background-image:linear-gradient(#fff400 0%, #fff400 100%);
-  }
-  #iwv5{
-    padding:10px 10px 10px 10px;
-    box-shadow:unset;
-    border-radius:0 0px 0 0;
-    border:0px solid black;
-    height:29px;
-    font-family:Helvetica, sans-serif;
-    text-shadow:0px 0px 17px black;
-    margin:0px 0px 0px -9px;
-  }
-  #ii0y{
-    padding:10px 10px 10px 10px;
-    box-shadow:unset;
-    border-radius:0 0px 0 0;
-    border:0px solid black;
-    height:29px;
-    font-family:Helvetica, sans-serif;
-    text-shadow:0px 0px 17px black;
-    margin:0px 0px 0px -9px;
-  }
-  #i4673{
-    padding:10px 10px 10px 10px;
-    box-shadow:unset;
-    border-radius:0 0px 0 0;
-    border:0px solid black;
-    height:29px;
-    font-family:Helvetica, sans-serif;
-    text-shadow:0px 0px 17px black;
-    margin:0px 0px 0px -9px;
-    float:none;
-    position:relative;
-    text-align:center;
-  }
-</style>
+</html>
