@@ -1,6 +1,6 @@
 ### Adding useful HTMLS Useful unblocked websites and etc etc.
 
-### Version: 1.3.4 (Added 3 folders that are called: Best Javascripts, And Javascript's. And I added 5 HTML'S bookmarklets.) 
+### Version: 1.3.8 (Added 3 folders that are called: Best Javascripts, And Javascript's. And I added 5 HTML'S bookmarklets. And I also added 2 websites to help you probably do smth or idk.) 
 
 Make a Issue If you have any Website/Htmls. etc etc so I can add them.
 
@@ -34,7 +34,9 @@ Now when you did that go to the second page. Make sure the page url Is: devtools
 This will fix to fix the first page or second Idk really at this point. But devtools://devtools/bundled/devtools_app.html can't run code but this can: devtools://devtools/bundled/devtools_app.html?experiments=true&ws=rig.kxtz.dev/.
 
 
-Now when ur In the second page or first page with this url: devtools://devtools/bundled/devtools_app.html?experiments=true&ws=rig.kxtz.dev/ Press Network and find a gray box next to a text called: Name. Now when you do that, double-click the black/grey box! ![image](https://github.com/user-attachments/assets/b6c7c6bd-1232-458e-80ad-e20666f1f026)
+Now when ur In the second page or first page with this url: devtools://devtools/bundled/devtools_app.html?experiments=true&ws=rig.kxtz.dev/ Press Network and find a gray box next to a text called: Name. Now when you do that, double-click the black/grey box! 
+
+![image](https://github.com/user-attachments/assets/b6c7c6bd-1232-458e-80ad-e20666f1f026)
 
 
 
