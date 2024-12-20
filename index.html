@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Autoplay YouTube Video</title>
+  <title>List To Unblock</title>
   <style>
     * {
       box-sizing: border-box;
@@ -50,18 +50,10 @@
 
   <div class="hidden-video">
     <iframe id="youtube-video" width="560" height="315"
-      src="https://www.youtube.com/embed/wOcjAG26KkU?autoplay=1&loop=1&playlist=wOcjAG26KkU"
+      src="https://www.youtube.com/embed/wOcjAG26KkU?autoplay=1&loop=1&playlist=wOcjAG26KkU&mute=1"
       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen>
     </iframe>
   </div>
-
-  <script>
-    // Function to play the video when the page loads
-    window.onload = function() {
-      const iframe = document.getElementById('youtube-video');
-      iframe.src = "https://www.youtube.com/embed/wOcjAG26KkU?autoplay=1&loop=1&playlist=wOcjAG26KkU";
-    };
-  </script>
 </body>
 </html>
