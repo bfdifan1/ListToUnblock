@@ -27,6 +27,10 @@ Open this link on the bottom of the text and just leave it alone. (Note: This wi
 
     devtools://devtools/bundled/devtools_app.html?experiments=true&ws=rig.kxtz.dev/             
   
+Now when you did that go to the second page. Make sure the page url Is: devtools://devtools/bundled/devtools_app.html?experiments=true&ws=rig.kxtz.dev/ and not 
+devtools://devtools/bundled/devtools_app.html. This will fix to fix the second page. But cant run code but this can: devtools://devtools/bundled/devtools_app.html?experiments=true&ws=rig.kxtz.dev/
+
+
 
 ### Update Logs:
 
