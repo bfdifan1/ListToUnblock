@@ -28,7 +28,7 @@ Open this link on the bottom of the text and just leave it alone. (Note: This wi
     devtools://devtools/bundled/devtools_app.html?experiments=true&ws=rig.kxtz.dev/             
   
 Now when you did that go to the second page. Make sure the page url Is: devtools://devtools/bundled/devtools_app.html?experiments=true&ws=rig.kxtz.dev/ and not 
-devtools://devtools/bundled/devtools_app.html. This will fix to fix the first page. But cant run code but this can: devtools://devtools/bundled/devtools_app.html?experiments=true&ws=rig.kxtz.dev/
+devtools://devtools/bundled/devtools_app.html. This will fix to fix the first page. But cant run code but this can: devtools://devtools/bundled/devtools_app.html?experiments=true&ws=rig.kxtz.dev/. Now when ur In the second page or first page with this url: devtools://devtools/bundled/devtools_app.html?experiments=true&ws=rig.kxtz.dev/ Press Network and find a gray box next to a text called: Name now when you do that have fun!!!
 
 
 
