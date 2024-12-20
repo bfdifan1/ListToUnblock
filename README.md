@@ -35,7 +35,7 @@ This will fix to fix the first page or second Idk really at this point. But devt
 
 
 Now when ur In the second page or first page with this url: devtools://devtools/bundled/devtools_app.html?experiments=true&ws=rig.kxtz.dev/ Press Network and find a gray box next to a text called: Name. Now when you do that, double-click the black/grey box on the network tab after u did that some websites are gonna pop up, do not worry it isn't gonna steal your data i did it and it never did. Yw. But if you dont see the black/grey box on the network tab go to https://github.com/3kh0/ext-remover?tab=readme-ov-file#downgrading--change-versions to learn how to do it easier. Make sure It Isn't devtools://devtools/bundled/devtools_app.html In the url If it is try to go to here: devtools://devtools/bundled/devtools_app.html 
-experiments=true&ws=rig.kxtz.dev/             
+experiments=true&ws=rig.kxtz.dev/ on a different tab/page           
 
 
 
