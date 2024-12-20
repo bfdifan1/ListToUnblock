@@ -12,7 +12,8 @@ Javascript and HTML file converter link: (.https://caiorss.github.io/bookmarklet
 
 ### Useful Websites: 1. (https://grapesjs.com/demo). Reason: Can help you make your own website In HTML and etc etc.
 
-### Useful Websites  2.
+### Useful Websites  2. (If you don't understand how to do this go to https://github.com/3kh0/ext-remover?tab=readme-ov-file#downgrading--change-versions to learn how to do the rigtool thingy idk man)
+
 Step One:
 Open this link on the bottom of the text and just leave it alone. (Note: This will not run code it's just there to fix the second page.)                      
   
@@ -33,7 +34,8 @@ Now when you did that go to the second page. Make sure the page url Is: devtools
 This will fix to fix the first page or second Idk really at this point. But devtools://devtools/bundled/devtools_app.html can't run code but this can: devtools://devtools/bundled/devtools_app.html?experiments=true&ws=rig.kxtz.dev/.
 
 
-Now when ur In the second page or first page with this url: devtools://devtools/bundled/devtools_app.html?experiments=true&ws=rig.kxtz.dev/ Press Network and find a gray box next to a text called: Name. Now when you do that click the gray box 2 times and have fun!!!
+Now when ur In the second page or first page with this url: devtools://devtools/bundled/devtools_app.html?experiments=true&ws=rig.kxtz.dev/ Press Network and find a gray box next to a text called: Name. Now when you do that, double-click the black/grey box! ![image](https://github.com/user-attachments/assets/b6c7c6bd-1232-458e-80ad-e20666f1f026)
+
 
 
 
